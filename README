@@ -1,0 +1,9 @@
+define
+Get the definitions of a word
+
+Dependencies
+requests
+
+Install
+Run:
+	./install
