@@ -1,6 +1,10 @@
 define
 Get the definitions of a word
 
+Usage
+Run:
+	define <word>
+
 Dependencies
 requests
 
