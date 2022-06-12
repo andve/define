@@ -1,0 +1,13 @@
+#!/usr/bin/sh
+
+INSTALL_PATH="/usr/local/bin"
+
+if [ -L "${INSTALL_PATH}/define" ]; then
+	rm "${INSTALL_PATH}/define"
+fi
+
+ln -sv $(realpath define.py)  "${INSTALL_PATH}/define"
+
+if [ -f "${INSTALL_PATH}/define" ]; then
+	chmod -v 755 "${INSTALL_PATH}/define"
+fi
